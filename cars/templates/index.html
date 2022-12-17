@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <style>
+        table, tr, th,td {
+            border:1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Cars</h1>
+    <table>
+    <tr ><th>Brand</th><th>Model</th><th>Year</th><th>Color</th></tr>
+
+    {% for movie in dataset %}
+    <tr>
+        <td>{{movie.brand}}</td>
+        <td>{{movie.model}}</td>
+        <td>{{movie.year}}</td>
+        <td>{{movie.color}}</td>
+    </tr>
+    {%endfor%}
+
+</table>
+</body>
+</html>
